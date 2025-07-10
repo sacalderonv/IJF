@@ -21,6 +21,17 @@ The main contents of the repository are the following:
 
 
 ## Usage and computational specifications 
+All file paths are relative to the root of the replication repository.
+Please set your working directory accordingly.
+
+All the estimation and simulations and analysis is done in R. The main package used for
+estimation and forecasting is `mtarm` (0.1.5) with major
+dependency `GIGrvg` (),`Formula` () where the values in parenthesis indicate
+the package versions we used. In addition, the following add-on packages
+are loaded and attached in the replication scripts (in alphabetical
+order): `Rfast` (), `expm` (), `ltsa` (). The results are mainly printed in the console of R. Only results of the simulation are recorded in files *.rds.
+
+
 
 ### For the M2 structure, that is a bivariate 3 regime MTAR model
 
