@@ -1,16 +1,18 @@
-####Resumen de las 1000 réplicas
+####Resume 1000 replications
 #####
 #rm(list = ls())
 regimes=3
 n_rep=1000
 
-###Carga de Información
-#load("replicas_gaussian_1000_3reg.rds")
-#load("replicas_student_1000_3reg.rds")
-#load("replicas_slash_1000_3reg.rds")
-#load("replicas_contaminated_1000_3reg.rds")
+####
+
+###Load information, you shuold activate one of the following 6 lines and update the names in lines
+#load("replicas_gaussian_1000_3reg1.rds")
+#load("replicas_student_1000_3reg1.rds")
+#load("replicas_slash_1000_3reg1.rds")
+#load("replicas_contaminated_1000_3reg1.rds")
 #load("replicas_hyperbolic_1000_3reg.rds")
-load("replicas_laplace_1000_3reg.rds")
+load("replicas_laplace_1000_3reg1.rds")
 
 
 ## Estimation 
@@ -18,9 +20,6 @@ repl_estimation<-repl_laplace_estimation
 
 ##Forecasting n.ahead with TRUE distribution
 repl<-repl_laplace
-
-
-
 
 
 ###Concatene if it is necessary
@@ -220,14 +219,16 @@ prop.delay<-table(delay)/n_rep
 prop.thresholds*100
 prop.delay*100
 ###Sesgos relativos de los parámetros: extra and thresholds
-sesgo_relativo_extra<-(sesgo_extra_def/abs(extra))*100
-sesgo_relativo_thresholds<-(sesgo_thresholds/abs(umbrales))*100
 
+sesgo_relativo_thresholds<-(sesgo_thresholds/abs(umbrales))*100
+sesgo_relativo_thresholds
 
 if(isTRUE(para.extra)){
+sesgo_relativo_extra<-(sesgo_extra_def/abs(extra))*100
 sesgo_extra_def<-sesgo_extra/n_rep
 prop.extra=suma_extra/n_rep
 prop.extra*100
+sesgo_relativo_extra
 }
 
 #####Pronóstico

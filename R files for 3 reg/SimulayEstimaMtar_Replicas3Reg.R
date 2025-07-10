@@ -1,8 +1,7 @@
-####Programa para simular y estimar los parámetros del modelo MTAR
+####Program for simulating MTAR process and estimating its parameters
+###This only includes M2 structure model, that is bivariate a MTAR with 3 regimes
 
-#BMTAR::autoplot.tsregime(datasim_Student_t$Sim,1)
-#BMTAR::autoplot.tsregime(datasim_Student_t$Sim,2)
-# Paquetes requeridos====
+# Required packages====
 
 library(GIGrvg)
 library(Formula)
@@ -247,4 +246,4 @@ end.time <- Sys.time()
 time.taken <- round(end.time - start.time,2)
 time.taken
 ####Guardar simulaciones====
-save(repl_slash_estimation,repl_slash,extra,umbrales,file="replicas_slash_1000_reg.rds")
+save(repl_slash_estimation,repl_slash,extra,umbrales,Rg,file="replicas_slash_1000_reg.rds")

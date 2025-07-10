@@ -291,6 +291,6 @@ repl_estimation_oth_dist_laplace<-repl_laplace_estimation
 
 
 param.extra=TRUE  #put TRUE or FALSE depends if the true distribution error has or not extra parameter
-if(param.extra){save(repl,repl_estimation,repl_compare_dist_todo,repl,repl_estimation_oth_dist_Gaussian,repl_estimation_oth_dist_slash,repl_estimation_oth_dist_contaminated,repl_estimation_oth_dist_hyperbolic,repl_estimation_oth_dist_laplace,umbrales,extra,Rg,ars,h.ahead,Rg,file="replicas_Identify_Dist_1000_2reg_Casitodo_Student1.rds")}else (!param.extra)
-{save(repl,repl_estimation,repl_compare_dist_todo,repl,repl_estimation_oth_dist_Gaussian,repl_estimation_oth_dist_slash,repl_estimation_oth_dist_contaminated,repl_estimation_oth_dist_hyperbolic,repl_estimation_oth_dist_laplace,umbrales,Rg,ars,h.ahead,file="replicas_Identify_Dist_1000_2reg_Casitodo_Student1.rds")}
+if(param.extra){save(repl,repl_estimation,repl_compare_dist_todo,repl,repl_estimation_oth_dist_Gaussian,repl_estimation_oth_dist_slash,repl_estimation_oth_dist_contaminated,repl_estimation_oth_dist_hyperbolic,repl_estimation_oth_dist_laplace,umbrales,extra,Rg,ars,h.ahead,Rg,file="replicas_Identify_Dist_RelativeBias_Forecasting_1000_2reg_ForStudent.rds")}else (!param.extra)
+{save(repl,repl_estimation,repl_compare_dist_todo,repl,repl_estimation_oth_dist_Gaussian,repl_estimation_oth_dist_slash,repl_estimation_oth_dist_contaminated,repl_estimation_oth_dist_hyperbolic,repl_estimation_oth_dist_laplace,umbrales,Rg,ars,h.ahead,file="replicas_Identify_Dist_RelativeBias_Forecasting_1000_2reg_ForStudent_1.rds")}
 

@@ -2,7 +2,7 @@
 #rm(list = ls())
 
 ###load simulations for estimation, you can choose estimation with the true distribution or with any other, for instance
-### normal to get respective column of table 1 and also complete table 10,  this is the example for student-t distribution of M1 model
+### gaussian to get respective column of table 1 and also complete table 10,  this is the example for True distribution error student-t  for M1 model
 ####If you have only one file con all the results of the simulations use:
 load("replicas_Identify_Dist_RelativeBias_Forecasting_1000_2reg_ForStudent.rds")
 
@@ -260,7 +260,7 @@ prop_Reg2<-lapply(veces_est[[2]],fun)
 lapply(veces_est[[1]],divided)
 lapply(veces_est[[2]],divided)
 
-(table(delay)/n_rep)*100 ##Porcentaje de veces
+(table(delay)/n_rep)*100 ##Porcentage of times  delay is selected correctly
 #suma_extra/n_rep
 prop.thresholds<-suma_thresholds/n_rep
 prop.delay<-table(delay)/n_rep
