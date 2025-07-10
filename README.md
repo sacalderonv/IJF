@@ -5,7 +5,7 @@ Mail: <name_surname@unal.edu.co>
 
 
 Preprint available at
-[Arxiv](https://www.arxiv.org/pdf/2503.04593)
+[Arxiv](https://www.arxiv.org/pdf/2503.04593). wokinf paper conditionally accepted at [International Journal of Forecasting](httts://forecasters.org/ijf)
 
 
 
