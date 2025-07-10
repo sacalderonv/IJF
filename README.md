@@ -15,7 +15,7 @@ This is a repository for  replications of some results for paper "Bayesian estim
 
 The main contents of the repository are the following:
 
-- `R Files for 2 reg estimation, missespecification and identify Distribution/`: Folder containing the generated tables as .txt files.
+-`R Files for 2 reg estimation, missespecification and identify Distribution/`: Folder containing 3 R scripts and 1 rds file where were stored 1000 replications in order to get whole table 10, student-t columns of table 1,2 and 5.
 - `figures/`: Folder containing the generated figures as .pdf or .png
   files.
 - `data/`: Folder containing the data used in the empirical application.
