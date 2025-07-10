@@ -22,4 +22,5 @@ The main contents of the repository are the following:
 
 ## Usage and computational specifications 
 
+### For the M2 structure, that is a bivariate 3 regime MTAR model
 
