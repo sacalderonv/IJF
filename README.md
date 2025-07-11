@@ -36,10 +36,13 @@ order): `expm` (), `ltsa` (), `Rfast` () and `tsDyn` . The results are mainly pr
 ### For the M2 structure, that is a bivariate 3 regime MTAR model
 
 #### Script for Resume simulations
-The script named "Resumen_Replicas_3Reg_Final.R" is used to obtain for instance, the results for tables 3, 4 and 6.
+The script named "Resumen_Replicas_3Reg_Final.R" is used to obtain for instance, the results for tables 3, 4 and 6. This script is divided in three parts. Only changes must be made in forst part. Second and three parts are only operatives and mainly compute and print the results in the R console.
 These results are printed in the R console. The results are given for columns(i.e for each distribution of the errors). Therefore you have run this script  for each distribution only modifying the lines indicated in the script. For instance, if you want the results for the slash distribution you must:
 
 - First, uncomment the line to load the results of the replications for this distribution, in this case, the line 25 load("replicas_slash_1000_3reg1.rds"). Next, comment the line 23(i.e, the line that there is without comment by defect.).
-- Change the names in line 32 repl_estimation<-repl_slash_estimation. The list repl_slash_estimation contains the results for the estimation.
-- Change the names in line 35 repl<-repl_hyperbolic. The list repl_hyperbolic contains the results for the forecasting.
+- Change the names in line 32 repl_estimation<-repl_gaussian_estimation. The list repl_slash_estimation contains the results for the estimation.
+- Change the names in line 35 repl<-repl_gaussian. The list repl_hyperbolic contains the results for the forecasting.
+- Change to TRUE the object para.extra in line 45, that is 45 para.extra=TRUE. This is because Slash distribution has extra parameter.
+- Run all code in the script and wait for the results in the console.
+
 
