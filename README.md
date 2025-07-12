@@ -36,7 +36,7 @@ order): `expm` (), `ltsa` (), `Rfast` () and `tsDyn` . The results are mainly pr
 ### For the M2 structure, that is a 2-variate 3 regime MTAR model
 
 #### Script for Resume simulations
-The script named "Resumen_Replicas_3Reg_Final.R" is used to obtain for instance, the results for tables 3, 4 and 6. This script is divided in three parts. Only changes must be made in forst part. Second and three parts are only operatives and mainly compute and print the results in the R console.
+The script named "**Resumen_Replicas_3Reg_Final.R**" is used to obtain for instance, the results for tables 3, 4 and 6. This script is divided in three parts. Only changes must be made in forst part. Second and three parts are only operatives and mainly compute and print the results in the R console.
 These results are printed in the R console. The results are given for columns(i.e for each distribution of the errors). Therefore you have run this script  for each distribution only modifying the lines indicated in the script. For instance, if you want the results for the slash distribution you must:
 
 - First, uncomment the line to load the results of the replications for this distribution, in this case, the line 25 load("replicas_slash_1000_3reg1.rds"). Next, comment the line 23(i.e, the line that there is without comment by defect.).
@@ -47,7 +47,7 @@ These results are printed in the R console. The results are given for columns(i.
 
 #### Script for running simulations
 
-The script named "SimulayEstimaMtar_Replicas3Reg.R" is used to simmulating, get the estimation of the paramaters, obtain the h.ahead forecasting and store the results for the number of replications set. This script depends on function in "script summarymtar_simulation.R", therefore this must be ran before running this script.
+The script named "**SimulayEstimaMtar_Replicas3Reg.R**" is used to simmulating, get the estimation of the paramaters, obtain the h.ahead forecasting and store the results for the number of replications set. This script depends on function in "**script summarymtar_simulation.R**", therefore this must be ran before running this script.
 
 What is stored? For each replication of the MTAR model simulated, it is stored mainly the estimation of the parameters including the credible intervals and the prediction for each forecast horizon with its respective prediction interval.
 
