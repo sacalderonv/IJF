@@ -45,7 +45,7 @@ These results are printed in the R console. The results are given for columns(i.
 - Change to TRUE the object para.extra in line 45, that is 45 para.extra=TRUE. This is because Slash distribution has extra parameter.
 - Run all code in the script and wait for the results in the console.
 
-#### <p style="color:red; font-size:18px;">Script for running simulations font</p> 
+#### Script for running simulations
 
 The script named "SimulayEstimaMtar_Replicas3Reg.R" is used to simmulating, get the estimation of the paramaters, obtain the h.ahead forecasting and store the results for the number of replications set. This script depends on function in "script summarymtar_simulation.R", therefore this must be ran before running this script.
 
