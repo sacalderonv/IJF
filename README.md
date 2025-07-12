@@ -33,7 +33,7 @@ order): `expm` (), `ltsa` (), `Rfast` () and `tsDyn` . The results are mainly pr
 
 
 
-### For the M2 structure, that is a bivariate 3 regime MTAR model
+### For the M2 structure, that is a 2-variate 3 regime MTAR model
 
 #### Script for Resume simulations
 The script named "Resumen_Replicas_3Reg_Final.R" is used to obtain for instance, the results for tables 3, 4 and 6. This script is divided in three parts. Only changes must be made in forst part. Second and three parts are only operatives and mainly compute and print the results in the R console.
@@ -47,5 +47,12 @@ These results are printed in the R console. The results are given for columns(i.
 
 #### Script for running simulations
 
-The script named "SimulayEstimaMtar_Replicas3Reg.R" is used to simmulating, get the estimation of the paramaters and store the results for the number of replications set. This script depends on function in "script summarymtar_simulation.R", therefore this must be ran before running this script.
+The script named "SimulayEstimaMtar_Replicas3Reg.R" is used to simmulating, get the estimation of the paramaters, obtain the h.ahead forecasting and store the results for the number of replications set. This script depends on function in "script summarymtar_simulation.R", therefore this must be ran before running this script.
+
+What is stored? For each replication of the MTAR model simulated, it is stored mainly the estimation of the parameters including the credible intervals and the prediction for each forecast horizon with its respective prediction interval.
+
+What can you modify in the code in order to explore all distributions for errors? Initially, you can modify the distribution error(for instace, you can use: "Gaussian", "Student-t", "Hyperbolic", "Laplace", "Slash", "Contaminated normal") and the extra parameter (check lines 79 and 81). The number of replications is controlled by object "n_rep"(see line 15) which is set in 1000. Length of the time series is establishe in object named "long"" in line 33, and the steps ahead for the forecasting is set in the object "h.ahead" in line 34. You can also change the names of the objects where it will be stored the outputs. These names suggested are in lines from 17 to 22 for estimation, and from 25 to 30 for prediction. In this script, the example is for the slash distribution. If you change thsese names you must ensure thta this names be changed in lines 226, 227 and 237.
+
+
+
 
